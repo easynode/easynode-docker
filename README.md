@@ -1,6 +1,6 @@
-# Alinode Docker
+# Easynode Docker
 
-Dockerfile for alinode.
+Dockerfile for easynode.
 
 ## Docker Hub
 
