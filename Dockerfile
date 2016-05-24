@@ -10,8 +10,8 @@ ENV EASYNODE_VERSION 7.0.1
 ENV ENVM_DIR /root/.envm
 
 
-
-
+RUN rm /bin/sh && \
+    ln -s /bin/bash /bin/sh
 
 # Install easynode v7.0.1 (node 7.0.0)
 RUN wget -qO- http://github.hzspeed.cn/envm/install.sh | bash
