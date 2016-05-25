@@ -35,4 +35,6 @@ RUN source $HOME/.bashrc && \
 #RUN source $HOME/.bashrc && npm install -g agentx
 #RUN git clone https://github.com/aliyun-node/commands.git /usr/local/src/alinode_commands
 #COPY docker-entrypoint.sh /
-"Dockerfile" [readonly] 40L, 1106C
+
+CMD ["node"]
+
