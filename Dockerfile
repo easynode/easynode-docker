@@ -6,14 +6,14 @@ MAINTAINER easynode
 
 ENV HOME /root
 ENV NPM_CONFIG_LOGLEVEL info
-ENV EASYNODE_VERSION 7.0.1
+ENV EASYNODE_VERSION 6.2.0
 ENV ENVM_DIR /root/.envm
 
 
 RUN rm /bin/sh && \
     ln -s /bin/bash /bin/sh
 
-# Install easynode v7.0.1 (node 7.0.0)
+# Install easynode v6.2.0 (node 6.2.0)
 RUN wget -qO- http://github.hzspeed.cn/envm/install.sh | bash
 RUN source $HOME/.bashrc && \
         envm install "easynode-v$EASYNODE_VERSION" && \
