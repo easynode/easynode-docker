@@ -11,7 +11,7 @@ ENV ENVM_DIR /root/.envm
 ENV PATH $ENVM_DIR/versions/easynode/$EASYNODE_VERSION/bin:$PATH
 
 RUN mkdir -p /usr/src/easynode
-COPY package.json /usr/src/easynode
+COPY "v$EASYNODE_VERSION/package.json" /usr/src/easynode
 WORKDIR /usr/src/easynode
 
 RUN rm /bin/sh && \
