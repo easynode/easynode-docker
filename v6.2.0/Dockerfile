@@ -12,7 +12,6 @@ ENV PATH $ENVM_DIR/versions/easynode/$EASYNODE_VERSION/bin:$PATH
 
 RUN mkdir -p /usr/src/easynode/examples
 COPY "v$EASYNODE_VERSION/package.json" /usr/src/easynode
-COPY examples/easynode-helloworld /usr/src/easynode/examples
 
 WORKDIR /usr/src/easynode
 
@@ -34,6 +33,8 @@ RUN source $HOME/.bashrc && \
         npm install -g mcss && \
         npm install
 
+
+COPY examples/easynode-helloworld /usr/src/easynode/examples/easynode-helloworld
 
 #RUN source $HOME/.bashrc && npm install -g agentx
 #RUN git clone https://github.com/aliyun-node/commands.git /usr/local/src/alinode_commands
