@@ -10,8 +10,6 @@ docker build -t hujb2000/easynode:6.2.0 v6.2.0/.
 
 
 
-
-
 ## Docker Hub
 
 You may use this Dockerfile via Docker Hub.

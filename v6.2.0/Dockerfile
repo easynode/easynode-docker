@@ -10,8 +10,10 @@ ENV EASYNODE_VERSION 6.2.0
 ENV ENVM_DIR /root/.envm
 ENV PATH $ENVM_DIR/versions/easynode/$EASYNODE_VERSION/bin:$PATH
 
-RUN mkdir -p /usr/src/easynode
+RUN mkdir -p /usr/src/easynode/examples
 COPY "v$EASYNODE_VERSION/package.json" /usr/src/easynode
+COPY examples/easynode-helloworld /usr/src/easynode/examples
+
 WORKDIR /usr/src/easynode
 
 RUN rm /bin/sh && \
