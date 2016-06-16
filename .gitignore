@@ -37,3 +37,4 @@ Session.vim
 *~
 v6.2.0/node_modules
 .idea
+.Dockerfile
