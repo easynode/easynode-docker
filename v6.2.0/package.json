@@ -9,6 +9,6 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "easynode": "~0.1.32"
+    "easynode": "~0.1.33"
   }
 }

@@ -6,6 +6,8 @@ Dockerfile for easynode. build the image hujb2000/easynode:6.2.0
 cp v6.2.0/Dockerfile ../.
 
 docker build -t hujb2000/easynode:6.2.0 .
+
+docker push hujb2000/easynode:6.2.0
 ```
 
 
